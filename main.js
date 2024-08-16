@@ -10,18 +10,18 @@ for (let i = 0; i < task; i++) {
     let one = rand(minNumber, maxNumber)
     let two = rand(minNumber, maxNumber)
     
-    
+    let operator = rand(1, 4)
     let answer
 
-    if (one + two) {
+    if (operator === 1) {
         answer = one + two 
         let userAnswer1 = +prompt(one + ' + ' + two + ' =') 
         alert(userAnswer1 === answer ? 'Ваш ответ верный - ' + userAnswer1 : 'Ваш ответ неверный - ' + userAnswer1 + '. Правильный ответ - ' + answer)
-    } else if (one - two) {
+    } else if (operator === 2) {
         answer = one - two 
         let userAnswer2 = +prompt(one + ' - ' + two + ' =');
         alert(userAnswer2 === answer ? 'Ваш ответ верный - ' + userAnswer2 : 'Ваш ответ неверный - ' + userAnswer2 + '. Правильный ответ - ' + answer)
-    } else if (one * two) {
+    } else if (operator === 3) {
         answer = one * two 
         let userAnswer3 = +prompt(one + ' * ' + two + ' =')
         alert(userAnswer3 === answer ? 'Ваш ответ верный - ' + userAnswer3 : 'Ваш ответ неверный - ' + userAnswer3 + '. Правильный ответ - ' + answer) 
